@@ -7,6 +7,6 @@ To achieve this efficiently, we propose the use of mathematical optimization to 
 
 We solve this problem through linear programming, taking into consideration past work in diet problems (Stigler, 1945; Gass S.I., Harris C.M., 2001). In this case, the crops considered where red romaine lettuce, chinese cabbage, mizuna mustard, and the set of types of nutrients is I={Vitamin B,..., Vitamin C}. Let j ∈ J denote the crop j, and let i ∈ I denote the nutrient i. 
 
-In the model, parameters weight_j denote the weight of crop j when it is harvested, nutrients_ij represent the amount of nutrients of type i of the kind of crop j, b_j is the minimum requirement of nutrient j. Variables x_j represent the number of grams of crop j every member of the crew should eat, and variables z_j represent a penalty if the nutritional requirement is not satisfied.
+In the model, weight_j denote the weight of crop j when it is harvested, nutrients_ij represent the amount of nutrients of type i of the kind of crop j, l_j is the minimum requirement of nutrient j, and u_j is the maximum amount recommended of nutrient j. Variables x_j represent the grams of crop j every member of the crew should eat.
 
 To use this code, please run "diet_CROSMO_FiloSpace.py" .
